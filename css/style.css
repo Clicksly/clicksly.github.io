@@ -1,0 +1,225 @@
+/* ---------- base ---------- */
+:root {
+  --bg: #fbfaf8;
+  --text: #262420;
+  --text-muted: #6b6559;
+  --accent: #8a5a44;
+  --border: #e5e1d8;
+  --max-width: 720px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+  font-size: 18px;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.25;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+}
+
+p.lede {
+  color: var(--text-muted);
+  margin-top: 0;
+}
+
+/* ---------- site header / nav ---------- */
+header.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+header.site-header .site-title a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+nav.site-nav {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+nav.site-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a.active {
+  color: var(--accent);
+}
+
+/* ---------- footer ---------- */
+footer.site-footer {
+  max-width: var(--max-width);
+  margin: 3rem auto 0;
+  padding: 1.5rem 1.5rem 2rem;
+  border-top: 1px solid var(--border);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ---------- entry lists (writing / projects index) ---------- */
+ul.entry-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+ul.entry-list li {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+ul.entry-list li:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.entry-title a {
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.entry-title a:hover {
+  color: var(--accent);
+}
+
+.entry-meta {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.entry-desc {
+  margin: 0.4rem 0 0;
+  color: var(--text-muted);
+}
+
+.tag {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.1rem 0.5rem;
+  margin-right: 0.4rem;
+}
+
+/* ---------- individual piece pages ---------- */
+.piece-header {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.piece-body p {
+  margin: 1.2rem 0;
+}
+
+/* ---------- home page ---------- */
+.intro {
+  margin-bottom: 3rem;
+}
+
+.home-links {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+}
+
+.home-links a {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.home-links a:hover {
+  border-color: var(--accent);
+}
+
+.home-links .card-title {
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.home-links .card-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 480px) {
+  .home-links {
+    grid-template-columns: 1fr;
+  }
+  header.site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
