@@ -8,26 +8,27 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
   <header class="site-header">
     <div class="site-title"><a href="index.html">Claire Mitchell</a></div>
     <nav class="site-nav">
       <a href="index.html">Home</a>
       <a href="writing.html">Writing</a>
-      <a href="projects.html" class="active">Projects</a>
+      <a href="projects.html" class="active" aria-current="page">Projects</a>
       <a href="models.html">3D Models</a>
       <a href="photography.html">Photography</a>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <h1>Projects</h1>
     <p class="lede">Things I've built, with notes on how and why.</p>
 
     <ul class="entry-list">
       <li>
         <div class="entry-title"><a href="projects/NOBLETIGER.html">NOBLETIGER Tracker</a></div>
-        <div class="entry-meta">June 2026 &middot; <span class="tag">Analytics</span><span class="tag">Programming</span></div>
+        <div class="entry-meta">June 2026</div>
         <p class="entry-desc">
           A programmatic solution for tracking one of the most elusive metrics in Baseball, The NOBLETIGER.
         </p>
@@ -36,7 +37,7 @@
       <!--
         Add a new <li> like the one above for each new project.
         1. Create a new file in the projects/ folder (copy projects/sample-project.html).
-        2. Link to it here with a title, date, tag, and short description.
+        2. Link to it here with a title, date, and short description.
       -->
     </ul>
   </main>
