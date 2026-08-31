@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrophotography for Photographers — Claire Mitchell</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-title"><a href="../index.html">Claire Mitchell</a></div>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../writing.html" class="active" aria-current="page">Writing</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../photography.html">Photography</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <a href="../writing.html" class="back-link">&larr; Back to writing</a>
+
+    <div class="piece-header">
+      <h1>Astrophotography for Photographers: The Technical Steps</h1>
+      <div class="entry-meta">August 2026</div>
+    </div>
+
+    <div class="piece-body">
+      <p>
+        Night-sky photography is a signal problem. The targets are faint, the sky is not truly black, and the Earth turns while the shutter is open. Every decision below exists to collect more light without smearing it &mdash; and then to make that light visible.
+      </p>
+
+      <h2><span class="section-number">01</span> Decide how you will beat the rotation</h2>
+      <p>
+        The sky moves about 15 arcseconds per second. The whole craft divides by how you answer that. Each step up buys exposure length and costs setup time.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Rig</th>
+              <th>What it does</th>
+              <th>Frame length</th>
+              <th>Targets</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fixed tripod</td>
+              <td>Nothing. You work inside the trailing limit.</td>
+              <td>5&ndash;25 s</td>
+              <td>Milky Way, constellations, landscape skies</td>
+            </tr>
+            <tr>
+              <td>Star tracker</td>
+              <td>Turns the camera at sidereal rate on one axis. Needs polar alignment.</td>
+              <td>1&ndash;4 min</td>
+              <td>Bright nebulae and wide deep-sky, camera lens</td>
+            </tr>
+            <tr>
+              <td>Telescope + guiding</td>
+              <td>Tracks, then corrects its own error from a guide star.</td>
+              <td>2&ndash;10 min</td>
+              <td>Galaxies, small nebulae, planetary nebulae</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2><span class="section-number">02</span> Set &amp; focus</h2>
+      <p>
+        Shoot RAW in manual mode. Fix white balance around 4000 K, turn off long-exposure noise reduction and image stabilisation, and use a 2-second delay or electronic first-curtain shutter so the shutter itself does not shake the frame.
+      </p>
+      <p>
+        Autofocus cannot see stars. Switch to manual, put a bright star in live view at maximum magnification, and turn the ring until the star is at its smallest and dimmest &mdash; that point is sharper than anything the focus scale claims. Lock the ring with tape. Check it again halfway through the night: lenses contract as they cool and focus drifts with them.
+      </p>
+      <p>
+        Frame with a throwaway test shot at ISO 12800 and 5 seconds. It is faster than squinting through a viewfinder, and it shows you the light pollution you will be fighting.
+      </p>
+
+      <h2><span class="section-number">03</span> Exposure: the trailing limit</h2>
+      <p>
+        On a fixed tripod your exposure is capped not by brightness but by motion. Beyond the cap, every star becomes a short line. Tracking removes the cap; nothing else does.
+      </p>
+
+      <p>
+        Two formulas set the cap. The rule of 500 divides 500 by your full-frame-equivalent focal length: quick, generous, fine for web-sized output. The NPF rule also accounts for aperture, pixel pitch and the target's declination, and lands roughly 40&ndash;60% shorter &mdash; use it if you inspect at 100%.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Focal</th>
+              <th>Rule of 500</th>
+              <th>NPF, f/2.8</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>14 mm</td>
+              <td>36 s</td>
+              <td>~14 s</td>
+            </tr>
+            <tr>
+              <td>24 mm</td>
+              <td>21 s</td>
+              <td>~9 s</td>
+            </tr>
+            <tr>
+              <td>35 mm</td>
+              <td>14 s</td>
+              <td>~7 s</td>
+            </tr>
+            <tr>
+              <td>50 mm</td>
+              <td>10 s</td>
+              <td>~5 s</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout">
+        <p class="callout-label">Aperture and ISO</p>
+        <p>
+          Open the lens wide, or one stop down if the corner stars grow wings. Then set ISO 1600&ndash;6400. ISO doesn't collect light; it trades highlight headroom for lower read noise. Expose so the sky peak sits about a quarter in from the left of the histogram &mdash; off the wall, nowhere near the middle.
+        </p>
+      </div>
+
+      <h2><span class="section-number">04</span> Shoot in a set, not single photos</h2>
+      <p>
+        Random noise averages out; signal does not. Stacking <em>n</em> identical frames improves signal-to-noise by roughly the square root of <em>n</em> &mdash; sixty frames are about eight times cleaner than one. Total integration time is the number that matters, so 60&nbsp;&times;&nbsp;30&nbsp;s and 6&nbsp;&times;&nbsp;300&nbsp;s are comparable. Shoot the whole set at one ISO, one focus and one temperature, then add calibration frames.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Frame</th>
+              <th>How to take it</th>
+              <th>What it removes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lights &times; 30&ndash;200</td>
+              <td>The target, back to back, no gaps</td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <td>Darks &times; 20+</td>
+              <td>Lens capped, same exposure, ISO and temperature</td>
+              <td>Thermal signal, hot pixels, amp glow</td>
+            </tr>
+            <tr>
+              <td>Flats &times; 20+</td>
+              <td>Even light source, focus untouched, mid-grey exposure</td>
+              <td>Vignetting, dust shadows</td>
+            </tr>
+            <tr>
+              <td>Bias / dark-flats &times; 30+</td>
+              <td>Capped, fastest shutter (bias) or the flats' exposure</td>
+              <td>Sensor read offset and pattern</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2><span class="section-number">05</span> Stack</h2>
+      <p>
+        Stacking software does two jobs: it aligns frames on matched star patterns, then averages them with a rejection rule that throws out pixels no other frame agrees with, like satellites, aircraft and sensor noise. DeepSkyStacker is free, powerful, and intuitive.
+      </p>
+
+      <p class="pipeline">
+        <span class="step">Calibrate</span><span class="arrow">&rarr;</span><span class="step">Debayer</span><span class="arrow">&rarr;</span><span class="step">Register</span><span class="arrow">&rarr;</span><span class="step">Normalise</span><span class="arrow">&rarr;</span><span class="step">Integrate</span><span class="arrow">&rarr;</span><span class="step">Crop</span>
+      </p>
+
+      <h2><span class="section-number">06</span> Stretch, then colour</h2>
+      <p>
+        A fresh stack looks black. That is correct: the data is linear, and almost all of it is crammed into the bottom few percent of the range. Stretching applies a monotonic transfer curve that lifts those low values into the visible middle while leaving the black point and the star cores intact.
+      </p>
+      <p>
+        Order matters, because most of these operations are only valid on linear data:
+      </p>
+
+      <ol class="step-list">
+        <li>Remove gradients. light pollution and moonglow, modelled and subtracted.</li>
+        <li>Neutralise the background and colour-calibrate against the star field, while the data is still linear.</li>
+        <li>Reduce noise now, before stretching amplifies it.</li>
+        <li>Stretch &mdash; asinh, histogram transformation or curves. Several small steps beat one large one.</li>
+        <li>Saturation and local contrast last, on the nonlinear image. Sharpen selectively, never globally.</li>
+      </ol>
+
+      <p>
+        Aim for a background around 20&ndash;25 out of 255 and neutral grey. A neutral, slightly-above-black background is what lets the reds and blues in the frame read as colour rather than as cast.
+      </p>
+
+      <div class="callout">
+        <p class="callout-label">Starting settings</p>
+        <div class="settings-grid">
+          <div>
+            <h3>Milky Way, tripod</h3>
+            <p>24 mm &middot; f/2.0<br>15 s &middot; ISO 3200<br>60 frames + 20 darks</p>
+          </div>
+          <div>
+            <h3>Wide nebula, tracker</h3>
+            <p>135 mm &middot; f/2.8<br>90 s &middot; ISO 800<br>80 frames + full calibration</p>
+          </div>
+          <div>
+            <h3>Galaxy, telescope</h3>
+            <p>600 mm &middot; f/6<br>300 s &middot; ISO 400, guided<br>40+ frames, several nights</p>
+          </div>
+        </div>
+      </div>
+      <p>
+        Treat these as first exposures to judge from, not answers. Read the histogram of the first frame and adjust from there.
+      </p>
+
+      <h2>What actually ruins the night</h2>
+
+      <div class="pitfall-grid">
+        <p>Focus drift as the lens cools &mdash; recheck hourly.</p>
+        <p>Dew on the front element. A cheap heater strip solves it.</p>
+        <p>Darks taken at a different temperature than the lights.</p>
+        <p>Stacking JPEGs, or anything already stretched.</p>
+        <p>Clipping the black point to make the sky look clean.</p>
+        <p>A tracker that was never properly polar aligned.</p>
+        <p>Wind, a light tripod, or the shutter's own slap.</p>
+        <p>Shooting through the worst of the light dome &mdash; wait for altitude.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-links">
+      <a href="mailto:ClaireJordyn20@gmail.com">ClaireJordyn20@gmail.com</a>
+      <a href="https://www.linkedin.com/in/claire-mitchell-5ab717289">LinkedIn</a>
+      <a href="https://github.com/clicksly">GitHub</a>
+    </p>
+    <p class="footer-fine">&copy; 2026 Claire Mitchell.</p>
+  </footer>
+
+</body>
+</html>
