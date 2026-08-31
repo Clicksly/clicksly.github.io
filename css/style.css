@@ -181,45 +181,42 @@ ul.entry-list li:first-child {
   margin-bottom: 3rem;
 }
 
-.home-links {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 2rem;
+/* ---------- image galleries (models / photography) ---------- */
+.piece-body figure {
+  margin: 1.75rem 0;
 }
 
-.home-links a {
+.piece-body figure img {
   display: block;
+  width: 100%;
+  height: auto;
   border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 1.25rem;
-  text-decoration: none;
-  color: var(--text);
+}
+
+.piece-body figcaption {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
-.home-links a:hover {
-  border-color: var(--accent);
-}
-
-.home-links .card-title {
-  font-family: Georgia, serif;
-  font-size: 1.15rem;
-  display: block;
-  margin-bottom: 0.35rem;
-}
-
-.home-links .card-desc {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.75rem 0;
+}
+
+.gallery figure {
+  margin: 0;
 }
 
 @media (max-width: 480px) {
-  .home-links {
-    grid-template-columns: 1fr;
-  }
   header.site-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
   }
 }
