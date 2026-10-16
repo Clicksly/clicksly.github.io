@@ -224,6 +224,10 @@ ul.entry-list li:first-child {
   margin: 1.2rem 0;
 }
 
+.piece-body p.indent {
+  margin-left: 1.75rem;
+}
+
 .chapter-heading {
   text-align: center;
   font-weight: bold;
