@@ -402,6 +402,50 @@ ul.entry-list li:first-child {
   }
 }
 
+/* ---------- dough calculator ---------- */
+.calc-controls {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.calc-row label {
+  display: flex;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.calc-row output {
+  color: var(--text);
+  font-weight: bold;
+}
+
+.calc-row input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.calc-summary {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text);
+  margin: 0 0 1rem;
+}
+
+.dough-calculator .table-wrap {
+  margin: 0 0 1rem;
+}
+
+.calc-note {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
 /* ---------- home page ---------- */
 .intro {
   margin-bottom: 3rem;
