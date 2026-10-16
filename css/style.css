@@ -439,6 +439,18 @@ ul.entry-list li:first-child {
   margin: 0 0 1rem;
 }
 
+.dough-calculator table {
+  min-width: 0;
+  table-layout: fixed;
+}
+
+.dough-calculator td:last-child,
+.dough-calculator th:last-child {
+  text-align: right;
+  white-space: nowrap;
+  width: 6rem;
+}
+
 .calc-note {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 0.8rem;
