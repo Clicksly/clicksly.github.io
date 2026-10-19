@@ -20,7 +20,7 @@ wide: true
       This site is where I keep what I've made. There are writing examples, a few programming projects, and my personal photography.
     </p>
     <p>
-      I'm looking for work in technical writing or digital content management. You can reach me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+      I'm looking for work in technical writing or digital content management. You can reach me at <a href="mailto:Jobs@clairejmitchell.com">Jobs@clairejmitchell.com</a>.
     </p>
   </section>
 
