@@ -1,0 +1,57 @@
+title: "Claire Mitchell"
+email: "ClaireJordyn20@gmail.com"
+description: "Writing samples and personal projects."
+url: "https://clairejmitchell.com"
+baseurl: ""
+
+# Free account at https://www.goatcounter.com/ — put your site's subdomain
+# code here (the part before ".goatcounter.com") to turn on visit tracking.
+goatcounter_code: ""
+
+collections:
+  projects:
+    output: true
+  photography:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "piece"
+      nav: "writing"
+      back_url: "/writing/"
+      back_label: "Back to writing"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "piece"
+      nav: "projects"
+      back_url: "/projects/"
+      back_label: "Back to projects"
+  - scope:
+      path: ""
+      type: "photography"
+    values:
+      layout: "piece"
+      nav: "photography"
+      back_url: "/photography/"
+      back_label: "Back to photography"
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+
+feed:
+  path: feed.xml
+
+kramdown:
+  parse_block_html: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
