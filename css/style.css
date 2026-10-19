@@ -27,8 +27,8 @@
 
 .skip-link {
   position: absolute;
-  top: -40px;
-  left: 0;
+  top: 0;
+  left: -9999px;
   z-index: 1000;
   background: var(--bg);
   color: var(--text);
@@ -40,11 +40,11 @@
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 0.9rem;
-  transition: top 0.1s ease-in-out;
+  transition: left 0.1s ease-in-out;
 }
 
 .skip-link:focus {
-  top: 0;
+  left: 0;
 }
 
 body {
