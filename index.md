@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Home"
+title: "Claire Mitchell"
 description: "Writing samples and personal projects."
 nav: "home"
 permalink: /

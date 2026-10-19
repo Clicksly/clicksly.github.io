@@ -17,6 +17,10 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      image: "/assets/images/social-card.png"
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "piece"
@@ -43,6 +47,7 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 feed:
   path: feed.xml

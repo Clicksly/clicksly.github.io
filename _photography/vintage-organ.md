@@ -5,6 +5,7 @@ date: 2023-10-01
 permalink: /photography/vintage-organ/
 redirect_from: /photography/sample-set.html
 wide: true
+image: "/photography/images/IMG_1125.JPG"
 ---
 <p>
   In 2023, my boyfriend cheated on me. Desperate to avoid solitude,
