@@ -6,7 +6,7 @@ baseurl: ""
 
 # Free account at https://www.goatcounter.com/ — put your site's subdomain
 # code here (the part before ".goatcounter.com") to turn on visit tracking.
-goatcounter_code: ""
+goatcounter_code: "clairejordyn"
 
 collections:
   projects:
